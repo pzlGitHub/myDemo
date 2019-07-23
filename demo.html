@@ -9,6 +9,8 @@
 <body>
     <p>hell Everyone</p>
     <h1>Modified</h1>
+    <div></div>
+    <a href=""></a>
     <script>
         /*  git应用
             github官网，登陆账号
@@ -39,6 +41,11 @@
             git commit -m "..."         提交到本地仓库  可以写一些版本修改的信息
             git push <remote> <branch>  提交内容到远程仓库
             git remote -v               远程仓库名字
+            git log                     会输出更改的版本信息 需要按q键退出
+            git reflog                  全部版本号，更改的信息
+            git reset --hard HEAD^       版本回退
+
+            
             列表终端 -- 新建终端
             1.git add demo.html 提交到暂存区
             2.git commit -m "init and make a file" 提交到本地仓库
@@ -49,15 +56,16 @@
             5-1.执行一下
             // git config --global user.email "you@example.com"
             // git config --global user.name "Your Name"
-            6.git push origin master:master  origin是缩写的名字
+            6.git push origin master:master  origin是远程仓库名字的缩写
             本地master分支提交到远程的master分支上
 
             提示信息
-            nothing to commit, working tree clean 三区的内容使一致的
             modified:   demo.html  该文件被修改了
             提示两种方案，用add提交，用checkout撤销前面的操作（版本回退）
             new file:   demo.html  工作目录与暂存区是一样的
             提示一种方案，用checkout撤销前面的操作,版本回退
+            当本地仓库提交给远程仓库文件后再用git status语句查看状态，得到下面的提示就说明完成同步文件了
+            nothing to commit, working tree clean 三区的内容使一致的
 
             
         */
