@@ -57,19 +57,20 @@
             git diff <版本号> <版本号> 比较两个commit之间的差异
 
             列表终端 -- 新建终端
-            1.git add demo.html 提交到暂存区
-            2.git commit -m "init and make a file" 提交到本地仓库
-            3.git status  查看当前文件的状态  提示两种方案，用add提交，用checkout撤销前面的操作
-            4.git checkout -- demo.html  撤销操作
-            4-1.git add demo.html 提交到暂存区
-            5.git commit -m "add a P" 提交到本地仓库
+            1. git add demo.html 提交到暂存区
+            2. git commit -m "init and make a file" 提交到本地仓库
+            3. git status  查看当前文件的状态  提示两种方案，用add提交，用checkout撤销前面的操作
+            4. git checkout -- demo.html  撤销操作
+            4-1. git add demo.html 提交到暂存区
+            5. git commit -m "add a P" 提交到本地仓库
             5-1.执行一下
             // git config --global user.email "you@example.com"
             // git config --global user.name "Your Name"
-            6.git push origin master:master  origin是远程仓库名字的缩写
+            6. git push origin master:master  origin是远程仓库名字的缩写
             本地master分支提交到远程的master分支上
-            7. git add . / git add demo.html index.html
-
+            7. git add . / git add demo.html index.html 全部文件或多个文件的提交方法
+            8. 在dev的分支内 执行git pull origin master:dev语句，拉取修改过的最新的代码
+            
 
             提示信息
             modified:   demo.html  该文件被修改了
