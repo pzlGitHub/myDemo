@@ -89,13 +89,14 @@
             git merge dev  合并分支  选项： 选择当前的，选择来的，两个都要，比较两个的区别
             git checkout -b <name> 创建并切换到该分支
             git branch -d <name> 删除本地分支 
-            git push <仓库名> <branch> 删除远程分支
+            git push origin -d <name> 删除远程分支  
             1.创建分支
             2.查看分支
             3.切换分支，master分支创建一个demo.css和dev分支创建一个demo.css文件，必须执行git add 和 git commit语句
             4.在master分支进行合并分支，选择所需要合并的内容，会出现合并冲突，解决完后，切换回dev分支
             5.拉取修改过的最新的代码git pull origin master:dev
-
+            6.把dev分支用git push origin div:dev推导远程仓库内
+            7.在dev分支用git push origin -d dev 删除远程仓库的dev分支的内容
 
         */
     
