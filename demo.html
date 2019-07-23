@@ -32,9 +32,11 @@
             GitHub对协议与规范的实现
             GitHub 码云 都是遵循git的协议与规范 来进行代码的管理
 
-            工作目录
-            暂存区
-            仓库
+            三大区域
+            1.工作目录
+            2.暂存区
+            3.仓库
+            // git语句
             git clone <repository>      克隆仓库
             git status                  查看当前文件的状态
             git add <pathspec>          提交到暂存区
@@ -43,9 +45,16 @@
             git remote -v               远程仓库名字
             git log                     会输出更改的版本信息 需要按q键退出
             git reflog                  全部版本号，更改的信息
-            git reset --hard HEAD^       版本回退
+            git reset --hard HEAD^      针对三个区的版本回退一个版本
+            git reset --hard HEAD~2     针对三个区的版本回退多个版本
+            git reset --hard 版本号      针对三个区的版本回退指定的版本
+            git reset --mixed HEAD~1 / git reset HEAD~1  暂存区和仓库回退到上一个版本的样子，工作目录是当前状态的样子
+            git reset --soft HEAD~1     安全的回退，仓库回退到上一个版本的样子，暂存区和工作目录是当前状态的样子
+            git diff            工作区和暂存区的区别
+            git diff HEAD       比较工作区 与本地版本最近一次的commit的内容
+            git diff --cached   比较暂存区 与本地版本最近一次的commit的内容
+            git diff <版本号> <版本号> 比较两个commit之间的差异
 
-            
             列表终端 -- 新建终端
             1.git add demo.html 提交到暂存区
             2.git commit -m "init and make a file" 提交到本地仓库
